@@ -1,12 +1,19 @@
-import { defaultStyles } from "@/styles"
-import { Text, View } from "react-native"
+import { TracksList } from '@/components/TracksList';
+import { screenPadding } from '@/constants/tokens';
+import { defaultStyles } from '@/styles';
+import { ScrollView, View } from 'react-native';
 
 const SongsScreen = () => {
-  return (
-    <View style={defaultStyles.container}>
-      <Text style={defaultStyles.text}>Songs Screen</Text>
-    </View>
-  )
-}
+	return (
+		<View style={defaultStyles.container}>
+			<ScrollView
+				contentInsetAdjustmentBehavior='automatic'
+				style={{ paddingHorizontal: screenPadding.horizontal }}
+			>
+				<TracksList scrollEnabled={false} />
+			</ScrollView>
+		</View>
+	);
+};
 
-export default SongsScreen
+export default SongsScreen;

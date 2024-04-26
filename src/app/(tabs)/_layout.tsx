@@ -50,13 +50,13 @@ const TabsNavigation = () => {
         ),
       }} />
       <Tabs.Screen name='(songs)' options={{
-        title: 'Favorites',
+        title: 'Songs',
         tabBarIcon: ({ color }) => (
           <Ionicons name='musical-note-sharp' size={24} color={color} />
         ),
       }} />
       <Tabs.Screen name='artists' options={{
-        title: 'Favorites',
+        title: 'Artists',
         tabBarIcon: ({ color }) => (
           <FontAwesome6 name='users-line' size={20} color={color} />
         ),

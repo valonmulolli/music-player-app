@@ -17,6 +17,8 @@ export const TracksList = ({ ...flatlistProps }: TracksListProps) => {
 		<SafeAreaView style={{ flex: 1 }}>
 			<FlatList
 				data={library}
+				contentContainerStyle={{ paddingTop: 10, paddingBottom: 128 }}
+				ListFooterComponent={ItemDivider}
 				ItemSeparatorComponent={ItemDivider}
 				renderItem={({ item: track }) => (
 					<TracksListItem
